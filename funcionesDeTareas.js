@@ -25,7 +25,6 @@ const moduleTareas = {
     },
     deshacer: function(){ 
        let borrarTarea= tarea.pop()
-       console('tarea borrada con exito')
        moduleTareas.guardar(borrarTarea)
       
     },
