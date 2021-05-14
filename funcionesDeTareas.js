@@ -22,7 +22,13 @@ const moduleTareas = {
     filtrar: function(filtro){
        let filtrar = tarea.filter(tarea => tarea.estado === filtro || tarea.titulo.includes(filtro));
        console.log(filtrar)
-    }
+    },
+    deshacer: function(){ 
+       let borrarTarea= tarea.pop()
+       console('tarea borrada con exito')
+       moduleTareas.guardar(borrarTarea)
+      
+    },
 } 
 
 module.exports = moduleTareas;
